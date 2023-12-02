@@ -1,0 +1,140 @@
+{
+    "root": ".",
+    "experiment_tag": "TEST BASELINES",
+    "debug_enable": false,
+    "load_from_chkpt_path": null,
+    "chkpt_step": 5,
+    "constraint_type": "slicewise",
+    "constraint_mean_rate": false,
+    "constraint_min_rate": false,
+    "constraint_mean_latency": false,
+    "constraint_max_latency": false,
+    "constraint_rate_violation_rate": true,
+    "constraint_latency_violation_rate": true,
+    "w_obj": 0.01,
+    "w_constraint_rate": 1.0,
+    "w_constraint_latency": 1.0,
+    "w_constraint_rate_violation_rate": 1.0,
+    "w_constraint_latency_violation_rate": 1.0,
+    "r_mean": 1.1,
+    "r_min": 0.8,
+    "l_mean": 0.08,
+    "l_max": 0.05,
+    "r_min_violation_rate": 0.1,
+    "l_max_violation_rate": 0.05,
+    "slice_reassignment_prob": 0.0,
+    "data_rate_mbps": [
+          [
+                5.0,
+                15.0
+          ],
+          [
+                2.0,
+                10.0
+          ],
+          [
+                5.0,
+                15.0
+          ],
+          [
+                2.0,
+                10.0
+          ]
+    ],
+    "data_rate_random_walk_sigma": 1.0,
+    "device": "cuda:0",
+    "random_seed": 2468642,
+    "n": 20,
+    "n_ht": [
+          7,
+          10
+    ],
+    "n_ll": [
+          5,
+          9
+    ],
+    "n_be": [
+          4,
+          8
+    ],
+    "T_slices": {
+          "train": 100,
+          "test": 20
+    },
+    "T": {
+          "train": 1,
+          "test": 1
+    },
+    "T_scheduling_rounds": {
+          "train": 1,
+          "test": 1
+    },
+    "scheduling_substep_length": 0.1,
+    "T_0": {
+          "train": 5,
+          "test": 5
+    },
+    "density_mode": "var_density",
+    "density_n_users_per_km_squared": 5.0,
+    "R": 2000,
+    "num_samples": {
+          "train": 1,
+          "test": 16
+    },
+    "BW_total": 20.0,
+    "P_max_dBm": 10.0,
+    "noise_PSD_dBm": -174.0,
+    "speed": 1.0,
+    "shadowing": 7.0,
+    "num_fading_paths": 100,
+    "batch_size": 16,
+    "n_train_epochs": 20,
+    "lr_primal": 0.001,
+    "lr_dual": {
+          "train": 0.5,
+          "test": 0.5
+    },
+    "dual_clamp_max": 5.0,
+    "dual_slack": 0.01,
+    "resample_rx_locs": true,
+    "num_features_list": [
+          64,
+          64
+    ],
+    "lambda_transform": false,
+    "batch_norm": false,
+    "dropout": 0.0,
+    "n_primal_iters": 2,
+    "primal_dual_dithering_noise_level": 0.0,
+    "dual_train_dist": "uniform-mixture",
+    "dual_train_dist_mean": 0.5,
+    "dual_train_dist_sigma": 0.5,
+    "dual_train_dist_sigma_decay_period": 50,
+    "dual_train_dist_sigma_decay_factor": 1.0,
+    "dual_train_dist_sigma_clamp_min": 0.1,
+    "dual_train_dist_n_mixtures": 1,
+    "dual_reg": 0.0,
+    "lr_dual_train_dist": 1.0,
+    "lr_dual_train_dist_decay_period": 5,
+    "lr_dual_train_dist_decay_factor": 0.7,
+    "lr_dual_train_dist_decay_enable_after_n_iters": 0,
+    "dual_train_dist_constraint_relax_tol": 0.0,
+    "dual_train_dist_update_period": 10,
+    "dual_train_dist_update_n_iters": 2,
+    "dual_train_dist_update_warmup_iters": 0,
+    "dual_train_dist_update_strategy": "dual-dynamics",
+    "dual_test_init_strategy": "zeros",
+    "pgrad_clipping_constant": null,
+    "dgrad_clipping_constant": -1,
+    "dgrad_clipping_constant_disable_after_n_iters": Infinity,
+    "dstep_clipping_constant": null,
+    "weight_decay": 0.0,
+    "momentum": 0.8,
+    "use_primal_optimizer": true,
+    "use_primal_lr_scheduler": true,
+    "lr_primal_decay_period": 10,
+    "lr_primal_decay_rate": 0.7,
+    "m": 1,
+    "noise_var": 3.9810717055349695e-15,
+    "P_max": 0.01
+}
